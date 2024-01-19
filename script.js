@@ -41,7 +41,7 @@ let typed = new Typed(".text", {
 });
 function downloadCV() {
     // Yahan apne CV ka file path den
-    var cvFilePath = './job cv 3.pdf';
+    var cvFilePath = './Modern CV2.pdf';
 
     // Ek anchor element create karen
     var link = document.createElement('a');
@@ -73,3 +73,12 @@ function handleButtonClick() {
 
     isButtonClicked = !isButtonClicked;
 }
+
+$(document).ready(function(){
+
+    $('body').ripples({
+        resolution: 512,
+        dropRadius:10
+    })
+})
+
